@@ -4,8 +4,7 @@ public class RK {
 
 	public static Vector<Integer> run(String S, String T) {
 		
-		Vector<Integer> res = new Vector<>();
-		
+		Vector<Integer> res = new Vector<>();		
 		int len = T.length();
 		
 		String text = "";
