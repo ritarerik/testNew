@@ -1,7 +1,6 @@
 import java.util.Vector;
 
 public class RK {
-
 	public static Vector<Integer> run(String S, String T) {		
 		Vector<Integer> res = new Vector<>();		
 		int len = T.length();		
@@ -22,8 +21,7 @@ public class RK {
 		}		
 		if (res.isEmpty()) res.add(-1);		
 		return res;		
-	}
-	
+	}	
 	private static int getHash(String S, String sub) {		
 		int q = 65713; 
 		int hash = 0;			
@@ -31,6 +29,5 @@ public class RK {
 			hash += (((int) sub.charAt(i)) * Math.pow(2, sub.length() - i - 1)) % q;			
 		}		
 		return hash;		
-	}
-	
+	}	
 }
