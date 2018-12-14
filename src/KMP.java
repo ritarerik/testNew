@@ -1,10 +1,10 @@
-import java.util.Vector;
+import java.util.ArrayList;
 
 public class KMP {
 
-	public static Vector<Integer> run(String S,  String T) {		
+	public static ArrayList<Integer> run(String S,  String T) {		
 		int pref[] = prefixFunction(T + "В¶" + S);		
-		Vector<Integer> res = new Vector<>();		
+		ArrayList<Integer> res = new ArrayList<>();		
 		for (int i = 0; i < pref.length; i++) {
 			if (pref[i] == T.length()) res.add(i - 2 * T.length()); 
 		}		

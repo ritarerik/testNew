@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Vector;
+import java.util.ArrayList;
 
 public class MainClass {
 	
@@ -35,7 +35,7 @@ public class MainClass {
 			in = new Scanner(System.in);
 	        String S = in.nextLine().toLowerCase();
 	        String T = "";
-	        Vector<Integer> V = new Vector<>();
+	        ArrayList<Integer> V = new ArrayList<>();
 	        
 	        //-----------------------------------------------------------//
 	        switch(num) {     
@@ -64,7 +64,7 @@ public class MainClass {
 			        } else if (T.contains("¶")) {
 			        	System.out.println(">> Подстрока содержит запрещённый символ ¶");
 			        } else {
-				        V = new Vector<>();
+				        V = new ArrayList<>();
 				        V = KMP.run(S, T);
 				        res += "[";
 				        for (int i = 0; i < V.size(); i++) {
@@ -84,7 +84,7 @@ public class MainClass {
 					System.out.print("\n>> Подстрока > ");				
 			        T = in.nextLine().toLowerCase();
 		        	
-		        	V = new Vector<>();
+		        	V = new ArrayList<>();
 			        V = RK.run(S, T);
 			        res += "[";
 			        for (int i = 0; i < V.size(); i++) {

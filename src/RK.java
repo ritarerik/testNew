@@ -1,8 +1,8 @@
-import java.util.Vector;
+import java.util.ArrayList;
 
 public class RK {
-	public static Vector<Integer> run(String S, String T) {		
-		Vector<Integer> res = new Vector<>();		
+	public static ArrayList<Integer> run(String S, String T) {		
+		ArrayList<Integer> res = new ArrayList<>();		
 		int len = T.length();		
 		String text = "";
 		int textHash = 0; 
