@@ -19,7 +19,8 @@ public class RK {
 				if (equal) res.add(i + 1);				
 			}
 		}		
-		if (res.isEmpty()) res.add(-1);		
+		if (res.isEmpty()) res.add(-1);	
+		System.gc();
 		return res;		
 	}	
 	private static int getHash(String S, String sub) {		
@@ -27,7 +28,8 @@ public class RK {
 		int hash = 0;			
 		for (int i = 0; i < sub.length(); i++) {			
 			hash += (((int) sub.charAt(i)) * Math.pow(2, sub.length() - i - 1)) % q;			
-		}		
+		}	
+		System.gc();
 		return hash;		
 	}	
 }

@@ -75,6 +75,7 @@ public class MainClass {
 				        }				        
 				        res += "]\n\n";				        
 			        }
+			        System.gc();
 		        	break;
 		        	
 		       	//-----------------------------------------------------------//	
@@ -95,6 +96,7 @@ public class MainClass {
 			        }
 			        
 			        res += "]\n\n";
+			        System.gc();
 		        	break;
 		        	
 		        default:
@@ -106,7 +108,7 @@ public class MainClass {
 	        //-----------------------------------------------------------//
         	System.out.print("\n> Результат > ");
 	        System.out.println(res);
-	        
+	        System.gc();
 		}
 		
 		

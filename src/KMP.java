@@ -8,7 +8,8 @@ public class KMP {
 		for (int i = 0; i < pref.length; i++) {
 			if (pref[i] == T.length()) res.add(i - 2 * T.length()); 
 		}		
-		if (res.isEmpty()) res.add(-1);		
+		if (res.isEmpty()) res.add(-1);	
+		System.gc();
 		return res;
 		
 	}
@@ -21,7 +22,8 @@ public class KMP {
 			while ((j > 0) && (S.charAt(i) != S.charAt(j))) j = res[j - 1];			
 			if (S.charAt(i) == S.charAt(j)) j++;			
 			res[i] = j;			
-		}			
+		}	
+		System.gc();
 		return res;	
 	}
 	
